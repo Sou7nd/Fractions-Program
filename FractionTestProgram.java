@@ -6,7 +6,8 @@
  * Compiler:    javac
  * Date:        February 5, 2026
  * 
- * Purpose: 
+ * Purpose: The purpose of this program is to go through some possible combinations of fractions that will test the required 
+ * things needed to implement the fractions class such as negation, multiplication, division, power, etc.
  * 
  * ************************************************************************************************************************************/
 

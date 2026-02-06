@@ -6,7 +6,8 @@
  * Compiler:    javac
  * Date:        February 2, 2026
  * 
- * Purpose: 
+ * Purpose: The purpose of this is to create a class for a user to be able to utilize fractions. This adds
+ * the ability to add, subtract, multiply, divide, raise to the power, and negate fractions.
  * 
  * ************************************************************************************************************************************/
 
@@ -112,17 +113,17 @@ public class Fraction //Class
         this(num, 1);//Calls the 2 parameter constructor with num as numerator and 1 as denominator.
     }   
 
-    public long getNumerator() //function to get numerator returned since numerator is private by default
+    public long getNumerator() //Method to get numerator returned since numerator is private by default
     {
         return numerator;
     }
 
-    public long getDenominator() //function to get denominator returned since denominator is private by default
+    public long getDenominator() //Method to get denominator returned since denominator is private by default
     {
         return denominator;
     }
 
-    public Fraction add(Fraction inFraction)
+    public Fraction add(Fraction inFraction) //Addition method
     {
         //Get the new numerator by multiplying the numerators of each fraction by the denominator of the opposite
         //one and then combining the numerators.
@@ -137,7 +138,7 @@ public class Fraction //Class
     }
 
 
-    public Fraction subtract(Fraction inFraction)
+    public Fraction subtract(Fraction inFraction) //Subtraction method
     {
         //Get the new numerator by multiplying the numerators of each fraction by the denominator of the opposite
         //one and then subtracting the numerators.
@@ -151,7 +152,7 @@ public class Fraction //Class
     }
 
 
-    public Fraction multiply(Fraction inFraction)
+    public Fraction multiply(Fraction inFraction) //Multiplication Method
     {
         //Get the new numerator by multiplying the numerators together
         long newNumerator = this.numerator * inFraction.getNumerator();
@@ -165,7 +166,7 @@ public class Fraction //Class
     }
 
 
-    public Fraction divide(Fraction inFraction)
+    public Fraction divide(Fraction inFraction) //Division method
     {
         //Get the new numerator by mutliplying the first fraction by the reverse of the second (num*denom / denom * num)
         long newNumerator = this.numerator * inFraction.getDenominator();
@@ -179,7 +180,7 @@ public class Fraction //Class
     }
 
 
-    public Fraction pow(int n)
+    public Fraction pow(int n) //Raise to the power method
     {
         if (n == 0) //To the 0th power
         {
@@ -203,7 +204,7 @@ public class Fraction //Class
     }
 
 
-    public Fraction negate()
+    public Fraction negate() //Negation method
     {
         //Multiply the numerator by a negative to negate the fraction
         return new Fraction(-this.numerator, this.denominator);
@@ -211,7 +212,7 @@ public class Fraction //Class
     }
 
     @Override
-    public String toString()
+    public String toString() //toString method
     {
         if (denominator == 0)
         {
