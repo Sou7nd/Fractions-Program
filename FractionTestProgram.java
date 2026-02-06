@@ -104,11 +104,11 @@ public class FractionTestProgram {
 
         //Test for negative infinity
         System.out.println("");
-        System.out.println("This tests a fraction for a negative infinity.");
+        System.out.println("This tests a fraction for a negative Infinity.");
 
         //Fraction
         Fraction negInf = new Fraction(-17, 0);
-        System.out.println("The input was (-17, 0), so it should return Infinity");
+        System.out.println("The input was (-17, 0), so it should return -Infinity");
         System.out.println("Returned fraction: " + negInf);
 
 
@@ -179,7 +179,7 @@ public class FractionTestProgram {
         //Power of 0
         System.out.println("The input was (1/2)^0, and it should return 1");
         System.out.println("Returned fraction: " + toPower.pow(0));
-            
+
 
 
 
