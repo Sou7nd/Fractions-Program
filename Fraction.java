@@ -37,7 +37,7 @@ public class Fraction //Class
     public Fraction(long num, long denom)
     {
 
-        //Test to see if the denominator is is 0 and then test to see if it is positive or negative infinity or NaN.
+        //Test to see if the denominator is 0 and then test to see if it is positive or negative infinity or NaN.
         if(denom == 0) //If the denominator is 0
         {
             if (num > 0) //Check for positive infinity
@@ -82,6 +82,7 @@ public class Fraction //Class
 
     }
 
+    //GCD Function
     private long gcd(long a, long b)
         {
             if (a < 0)
@@ -108,7 +109,7 @@ public class Fraction //Class
 
     public Fraction(long num)
     {
-        this(num, 1); //Calls the 2 parameter constructor with num as numerator and 1 as denominator.
+        this(num, 1);//Calls the 2 parameter constructor with num as numerator and 1 as denominator.
     }   
 
     public long getNumerator() //function to get numerator returned since numerator is private by default
@@ -216,11 +217,11 @@ public class Fraction //Class
         {
             if (numerator > 0)
             {
-                return "Positive Infinity"; //Positive infinity if numerator is positive and denominator is 0
+                return "Infinity"; //Positive infinity if numerator is positive and denominator is 0
             }
             else if (numerator < 0)
             {
-                return "Negative Infinity"; //Negative infinity if numerator is negative and denominator is 0
+                return "-Infinity"; //Negative infinity if numerator is negative and denominator is 0
             }
             else if (numerator == 0)
             {
