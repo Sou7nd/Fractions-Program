@@ -1,0 +1,53 @@
+This tests 2 fractions for reducing fractions.
+The input was (8, 16), so it should return 1/2
+Returned fraction: 1/2
+The input was (-12, 36), so it should return -1/3
+Returned fraction: -1/3
+
+This tests 2 fractions for negative denominator.
+The input was (8, -16), so it should return -1/2
+Returned fraction: -1/2
+The input was (12, -36), so it should return -1/3
+Returned fraction: -1/3
+
+This tests a fraction for a zero in the numerator.
+The input was (0, -16), so it should return 0
+Returned fraction: 0
+
+This tests 2 fractions for a whole number
+The input was (33, 1), so it should return 33
+Returned fraction: 33
+The input was (-5), so it should return -5
+Returned fraction: -5
+
+This tests a fraction for a positive infinity.
+The input was (10, 0), so it should return Infinity
+Returned fraction: Infinity
+
+This tests a fraction for a negative Infinity.
+The input was (-17, 0), so it should return -Infinity
+Returned fraction: -Infinity
+
+This tests a fraction for NaN.
+The input was (0, 0), so it should return NaN
+Returned fraction: NaN
+
+This tests for multiplication and division
+The input was 4/5*(8/(1/2)), and it should return 64/5
+Returned fraction: 64/5
+
+This tests for negation
+The fraction was (1, 2), and it should return -1/2
+Returned fraction: -1/2
+The fraction was Infinity, and it should return -Infinity
+Returned fraction: -Infinity
+The fraction was -Infinity, and it should return Infinity
+Returned fraction: Infinity
+
+This tests for powers
+The input was (1/2)^2, and it should return 1/4
+Returned fraction: 1/4
+The input was (1/2)^-2, and it should return 4
+Returned fraction: 4
+The input was (1/2)^0, and it should return 1
+Returned fraction: 1
