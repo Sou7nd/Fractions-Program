@@ -139,6 +139,51 @@ public class FractionTestProgram {
 
 
 
+        //Test for negation
+        System.out.println("");
+        System.out.println("This tests for negation");
+
+        //Fraction 1
+        Fraction toNegate = new Fraction(1, 2);
+        System.out.println("The fraction was (1, 2), and it should return -1/2");
+        Fraction negated = toNegate.negate();
+        System.out.println("Returned fraction: " + negated);
+
+        //Fraction 2
+        System.out.println("The fraction was Infinity, and it should return -Infinity");
+        Fraction negatedPosInf = posInf.negate();
+        System.out.println("Returned fraction: " + negatedPosInf);
+
+        //Fraction 2
+        System.out.println("The fraction was -Infinity, and it should return Infinity");
+        Fraction negatedNegInf = negInf.negate();
+        System.out.println("Returned fraction: " + negatedNegInf);
+
+        
+
+        //This tests powers
+        System.out.println("");
+        System.out.println("This tests for powers");
+
+        //Fractions
+
+        //Power of 2
+        Fraction toPower = new Fraction(1, 2);
+        System.out.println("The input was (1/2)^2, and it should return 1/4");
+        System.out.println("Returned fraction: " + toPower.pow(2));
+
+        //Power of -2
+        System.out.println("The input was (1/2)^-2, and it should return 4");
+        System.out.println("Returned fraction: " + toPower.pow(-2));
+
+        //Power of 0
+        System.out.println("The input was (1/2)^0, and it should return 1");
+        System.out.println("Returned fraction: " + toPower.pow(0));
+            
+
+
+
+
     }
 
 
